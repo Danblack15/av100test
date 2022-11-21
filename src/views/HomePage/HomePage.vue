@@ -37,8 +37,8 @@ export default {
     MessagePutUser
   },  
 
-  async mounted() {
-    await this.login()
+  mounted() {
+    this.login()
   },
 
   methods: {
