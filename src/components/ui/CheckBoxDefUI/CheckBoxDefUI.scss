@@ -1,0 +1,59 @@
+.checkbox-def {
+	&__input {
+		display: none;
+
+		&:checked+ {
+			.checkbox-def__label {
+				.checkbox-def__value {
+					display: flex;
+				}
+			}
+		}
+	}
+
+	&__label {
+		display: block;
+		width: 18px;
+		height: 18px;
+		border: 1px solid $greenColor;
+		border-radius: 2px;
+		cursor: pointer;
+		transition: .2s all;
+
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+
+	&__value {
+		display: none;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		justify-content: center;
+		align-items: center;
+		background: $greenColor;
+
+		& img {
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.checkbox-def {
+		&__label {
+			width: 14px;
+			height: 14px;
+		}
+	}
+}
+
+@media (max-width: 770px) {
+	.checkbox-def {
+		&__label {
+			width: 18px;
+			height: 18px;
+		}
+	}
+}

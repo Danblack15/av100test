@@ -1,0 +1,45 @@
+.call {
+	display: flex;
+	align-items: flex-start;
+
+	&__general {
+		display: flex;
+		align-items: center;
+	}
+
+	&__title {
+		font-size: 18px;
+	}
+
+	&__checkbox {
+		margin-left: 1rem;
+	}
+
+	&__content {
+		color: $grayColor;
+	}
+}
+
+@media (max-width: 992px) {
+	.call {
+		&__title {
+			font-size: 14.4px;
+		}
+	}
+}
+
+@media (max-width: 770px) {
+	.call {
+		flex-direction: column;
+
+		&__general {
+			display: flex !important;
+			width: 100% !important;
+			margin-bottom: 15px;
+		}
+
+		&__title {
+			font-size: 18px;
+		}
+	}
+}

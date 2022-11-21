@@ -1,14 +1,8 @@
 import { createStore } from 'vuex'
+import { DataModule } from "./DataModule"
 
 export default createStore({
-  state: {
-  },
-  getters: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
   modules: {
+    data: DataModule
   }
 })
