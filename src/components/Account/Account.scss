@@ -29,6 +29,10 @@
 		font-family: inherit;
 		transition: .3s all;
 
+		&:hover {
+			border-color: #ccc;
+		}
+
 		&:focus {
 			border: 0.1rem solid $greenColor;
 		}
